@@ -1,56 +1,57 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leaderboard
 
-> Description the project.
+> An Api based application which adds and retrieves the scores from the leaderboard API.
 
+![screenshot](./screenshot.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Languages:
+  - HTML, CSS, JS
+-Frameworks:  
+  - Webpack.
+- Technologies:
+  - Github, VS Code, Node.js
+
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://sumairq.github.io/leaderboard-api/))
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Install Webpack package bundler.
+
 ### Setup
+
+Clone this link [repo](https://github.com/sumairq/Todo-List-Microverse.git) to setup the repository.
 
 ### Install
 
+run the following commands:
+npm install webpack webpack-cli --save-dev
+npm install --save-dev html-webpack-plugin
+npm install --save-dev style-loader css-loader
+npm install --save-dev webpack-dev-server
+
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+Use the following commands to spin up the project.  
+npm run start
 
 ## Authors
 
-👤 **Author1**
+👤 **Sumair Qaisar Jadoon**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@sumairq](https://github.com/sumairq)
+- Twitter: [@sumair_qaisar](https://twitter.com/sumair_qaisar)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sumair-qaisar-jadoon-84a877164)
 
 ## 🤝 Contributing
 
