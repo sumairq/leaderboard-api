@@ -1,14 +1,40 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const scoreList = document.querySelector('.scores-body ul');
+
+const scores = [
+  {
+    name: 'Sumair',
+    score: 100,
+  },
+  {
+    name: 'John',
+    score: 200,
+  },
+  {
+    name: 'Allen',
+    score: 123,
+  },
+  {
+    name: 'Alice',
+    score: 140,
+  },
+  {
+    name: 'Rodger',
+    score: 65,
+  },
+];
+
+function populateScores() {
+  scores.forEach((item) => {
+    const newItem = document.createElement('li');
+    newItem.innerHTML = ` <li>
+  <p>${item.name}: ${item.score}</p>
+</li>`;
+    scoreList.appendChild(newItem);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  populateScores();
+});
