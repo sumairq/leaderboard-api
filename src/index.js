@@ -1,40 +1,13 @@
 import './style.css';
+import fetchScore from './modules/fetchScore.js';
+import addNewUser from './modules/addUser.js';
+import populateScores from './modules/populateScores.js';
 
-const scoreList = document.querySelector('.scores-body ul');
+const myForm = document.getElementById('myForm');
+const refreshButton = document.getElementById('refresh');
 
-const scores = [
-  {
-    name: 'Sumair',
-    score: 100,
-  },
-  {
-    name: 'John',
-    score: 200,
-  },
-  {
-    name: 'Allen',
-    score: 123,
-  },
-  {
-    name: 'Alice',
-    score: 140,
-  },
-  {
-    name: 'Rodger',
-    score: 65,
-  },
-];
+fetchScore().then((response) => { populateScores(response); });
+refreshButton.addEventListener('click', () => { window.location.reload(); });
+myForm.addEventListener('submit', addNewUser);
 
-function populateScores() {
-  scores.forEach((item) => {
-    const newItem = document.createElement('li');
-    newItem.innerHTML = ` <li>
-  <p>${item.name}: ${item.score}</p>
-</li>`;
-    scoreList.appendChild(newItem);
-  });
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  populateScores();
-});
+export default fetchScore;
