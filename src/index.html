@@ -18,7 +18,7 @@
                     <h2>Recent Scores</h2>
                 </div>
                 <div class="scores-head-button">
-                    <button>Refresh</button>
+                    <button type="button" id="refresh">Refresh</button>
                 </div>
             </div>
             <div class="scores-body solid-border">
@@ -32,13 +32,12 @@
             <div class="inputs-head">
                 <h2>Add your score</h2>
             </div>
-            <div class="inputs-name">
-                <input type="text" name="name" placeholder="name here" id="name" class="solid-border">
-            </div>
-            <div class="inputs-score">
+            <form id="myForm" class="form">
+                <input type="text" name="user" placeholder="username here" id="user" class="solid-border">
                 <input type="text" name="score" placeholder="score here" id="score" class="solid-border">
-            </div>
-            <div class="inputs-button"><button class="solid-border">Submit</button></div>
+                <button type="submit" class="inputs-button solid-border">Submit</button>
+            </form>
+
         </div>
     </main>
 </body>
